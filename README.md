@@ -21,7 +21,8 @@ A *user patch* is a Lua file that KOReader loads from `koreader/patches/` at sta
 
 - The center zone is the middle half of the screen, from 25% to 75% horizontally and vertically.
 - It takes priority over the double tap zones of the gestures plugin (the sides and corners).
-- **Double tap detection must be enabled.** In KOReader, turn on double tap under *Settings → Taps and gestures*, or set `disable_double_tap = false` in `settings.reader.lua`. With it on, every single tap waits for the double tap interval (about 0.3 s) before turning the page. You can adjust the interval under *Taps and gestures → Gesture intervals*.
+- **Double tap detection must be enabled.** In KOReader, turn on double tap under *Settings → Taps and gestures*, or set `disable_double_tap = false` in `settings.reader.lua`. With it on, every single tap waits for the double tap interval before turning the page.
+- **Recommended: lower the double tap interval to 200 ms.** KOReader's default is 300 ms, which makes page turns feel sluggish. 200 ms keeps the center double tap easy to hit while page turns feel almost instant. Set it under *Taps and gestures → Gesture intervals → Double tap interval*, or add `ges_double_tap_interval_ms = 200` to `settings.reader.lua` while KOReader is closed. If the double tap becomes hard to trigger, try 250 ms.
 
 ## Installation
 
