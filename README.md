@@ -49,3 +49,7 @@ Delete the file from `koreader/patches/` and restart KOReader. To turn off **all
 | Firmware | 5.19.5 |
 | KOReader | v2026.07.2 (kindlehf, installed via KPM) |
 | Jailbreak | KindleModding hotfix v2.5.0 |
+
+## License
+
+[MIT](LICENSE). KOReader itself is licensed under the AGPL-3.0; these patches only use its public APIs at runtime.
